@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <body  bgcolor="#E6E6FA">
+
+</head>
+ <h1 align="center">Welcome </h1>
+
+
+  <form action = "/getgram" method = "post" align="center">
+    Enter number of productions here:<br>
+      <input type="text" name="prod" ><br>
+        Enter the grammar here
+         <br>
+         <textarea rows = "10" cols = "60" name = "gram">
+
+         </textarea><br>
+
+<p align="center"><b><Choose the operation></b></p>
+	<input type="radio" name="radio" value="la">Lexical analyser<br>
+		<input type="radio" name="radio" value="first">First<br>
+		<input type="radio" name="radio" value="follow">Follow<br>
+		<input type="radio" name="radio" value="lr">Remove left recurssion<br>
+		<input type="radio" name="radio" value="lf"> Remove left factoring<br>
+     
+
+
+         <input type = "submit" value = "submit" />
+      </form>
+{%block content%}
+{%endblock content%}
+</body>
+</html>
